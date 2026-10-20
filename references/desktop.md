@@ -23,7 +23,7 @@ Applies to: the official **DeepSeek Harness** desktop app (Electron; `app-update
 
 ```bat
 set WORKBUDDY_ELECTRON_BIN=C:\path\to\WorkBuddy.exe
-"<app>\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add dsh-workbuddy-connect@0.7.8
+"<app>\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add dsh-workbuddy-connect@0.7.9
 ```
 
 Notes:
@@ -60,7 +60,7 @@ Then **fully quit the app** (window close may only hide it to the tray) and rela
 1. `<DSH_HOME>\.workbuddy-host-heartbeat.json` is rewritten with the app's live PID:
 
    ```json
-   {"version":1,"package":"dsh-workbuddy-connect","pluginVersion":"0.7.8","registeredAt":…,"pid":1234}
+   {"version":1,"package":"dsh-workbuddy-connect","pluginVersion":"0.7.9","registeredAt":…,"pid":1234}
    ```
 
    The heartbeat is written **once per registration** (not periodically) — a fresh mtime after a relaunch is the signal. If the file still points at a dead PID, the plugin did **not** load in the running app.

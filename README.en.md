@@ -25,7 +25,7 @@ This repository is an **Agent Skill**: it packages both integration paths (web a
 ```sh
 # Requires Node 22.19+ / 24+, pnpm 11+, a logged-in WorkBuddy desktop app
 npx @deepseek-ai/dsh@0.2.1-rc.2 web
-dsh plugin --profile web add dsh-workbuddy-connect@0.7.8
+dsh plugin --profile web add dsh-workbuddy-connect@0.7.9
 # restart `dsh web`, then pick the "WorkBuddy" group in the model dropdown
 ```
 
@@ -34,7 +34,7 @@ dsh plugin --profile web add dsh-workbuddy-connect@0.7.8
 ```bat
 :: The version must match the kernel inside the app (<app>\resources\runtime\primary-runtime\runtime.json -> desktopVersion)
 set WORKBUDDY_ELECTRON_BIN=C:\path\to\WorkBuddy.exe   :: only when WorkBuddy lives outside its default path
-"<app>\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add dsh-workbuddy-connect@0.7.8
+"<app>\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add dsh-workbuddy-connect@0.7.9
 :: quit the app completely (tray included) and relaunch
 ```
 
@@ -58,7 +58,7 @@ It resolves kernel → plugin version (built-in table, then npm `peerDependencie
 
 | DSH kernel | Plugin |
 |---|---|
-| 0.2.1-rc.2 | 0.7.8 |
+| 0.2.1-rc.2 | 0.7.9 |
 | 0.2.1-rc.1 | 0.7.7 |
 | 0.2.0-rc.2 | 0.7.6 |
 | 0.2.0-rc.1 | 0.7.0 |

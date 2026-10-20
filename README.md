@@ -25,7 +25,7 @@
 ```sh
 # 依赖：Node 22.19+ / 24+、pnpm 11+、已登录的 WorkBuddy 桌面端
 npx @deepseek-ai/dsh@0.2.1-rc.2 web
-dsh plugin --profile web add dsh-workbuddy-connect@0.7.8
+dsh plugin --profile web add dsh-workbuddy-connect@0.7.9
 # 重启 dsh web，在模型下拉里找「WorkBuddy」分组
 ```
 
@@ -34,7 +34,7 @@ dsh plugin --profile web add dsh-workbuddy-connect@0.7.8
 ```bat
 :: 版本必须与 App 内置内核一致（读 <app>\resources\runtime\primary-runtime\runtime.json 的 desktopVersion）
 set WORKBUDDY_ELECTRON_BIN=C:\path\to\WorkBuddy.exe   :: WorkBuddy 装在非默认路径时才需要
-"<app>\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add dsh-workbuddy-connect@0.7.8
+"<app>\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add dsh-workbuddy-connect@0.7.9
 :: 完全退出 App（含托盘）再启动
 ```
 
@@ -58,7 +58,7 @@ powershell -ExecutionPolicy Bypass -File scripts\repair-desktop.ps1
 
 | DSH 内核 | 插件版本 |
 |---|---|
-| 0.2.1-rc.2 | 0.7.8 |
+| 0.2.1-rc.2 | 0.7.9 |
 | 0.2.1-rc.1 | 0.7.7 |
 | 0.2.0-rc.2 | 0.7.6 |
 | 0.2.0-rc.1 | 0.7.0 |

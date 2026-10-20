@@ -21,7 +21,7 @@ agent_created: true
 1. **Version match or nothing.** Plugin and kernel are locked in pairs; a mismatch can stop DSH from starting at all.
    | DSH kernel | Plugin |
    |---|---|
-   | 0.2.1-rc.2 | 0.7.8 |
+   | 0.2.1-rc.2 | 0.7.9 |
    | 0.2.1-rc.1 | 0.7.7 |
    | 0.2.0-rc.2 | 0.7.6 |
    | 0.2.0-rc.1 | 0.7.0 |

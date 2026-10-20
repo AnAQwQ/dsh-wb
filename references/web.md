@@ -27,10 +27,10 @@ The web profile lives under `$DSH_HOME/profiles/web` (default `$DSH_HOME` = `~/.
 
 ## 2. Install the plugin
 
-Use the plugin version that matches the kernel (`0.2.1-rc.2 → 0.7.8`; full table in `SKILL.md`).
+Use the plugin version that matches the kernel (`0.2.1-rc.2 → 0.7.9`; full table in `SKILL.md`).
 
 ```sh
-dsh plugin --profile web add dsh-workbuddy-connect@0.7.8
+dsh plugin --profile web add dsh-workbuddy-connect@0.7.9
 ```
 
 What this does: adds the npm dependency to the profile, runs pnpm, and (per the plugin manager) should also register the bundle. **Verify both parts** — see § 3.
@@ -39,7 +39,7 @@ What this does: adds the npm dependency to the profile, runs pnpm, and (per the 
 
 ```sh
 # a) the dependency must be exactly the matched version
-cat ~/.dsh/profiles/web/package.json     # dependencies → "dsh-workbuddy-connect": "0.7.8"
+cat ~/.dsh/profiles/web/package.json     # dependencies → "dsh-workbuddy-connect": "0.7.9"
 # b) the bundle must be enabled (a bundle that is installed but not listed is never loaded)
 #    dsh.profile.bundles must contain "dsh-workbuddy-connect"
 ```
